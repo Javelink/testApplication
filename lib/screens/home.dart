@@ -1,18 +1,16 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
+import 'package:test_app/helpers/colorHelper.dart';
 
 class HomePage extends StatefulWidget {
   HomePageState createState() => HomePageState();
 }
 
 class HomePageState extends State<HomePage> {
-  final Random _random = new Random();
   Color _color = Colors.white;
 
   _changeBackgroundColor() {
     setState(() {
-      _color = new Color.fromRGBO(_random.nextInt(255), _random.nextInt(255),
-          _random.nextInt(255), 1.0);
+      _color = ColorHelper().randomBackgroundColor();
     });
   }
 
@@ -36,13 +34,11 @@ class HomePageState extends State<HomePage> {
       child: GestureDetector(
         behavior: HitTestBehavior.translucent,
         onTap: () => _changeBackgroundColor(),
-        child: Container(
-          child: Center(
-            child: Text(
-              "Hey there",
-              textAlign: TextAlign.center,
-              style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
-            ),
+        child: Center(
+          child: Text(
+            "Hey there",
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         ),
       ),
