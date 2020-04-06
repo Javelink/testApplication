@@ -1,1 +1,6 @@
-/Pods
+.classpath
+.project
+.settings/
+.vscode/
+/build
+.dart_tool/
