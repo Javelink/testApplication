@@ -6,11 +6,10 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
-  Color _color = Colors.white;
 
   _changeBackgroundColor() {
     setState(() {
-      _color = ColorHelper().randomBackgroundColor();
+      ColorHelper().randomBackgroundColor();
     });
   }
 
@@ -18,7 +17,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Container(
       child: Scaffold(
-        backgroundColor: _color,
+        backgroundColor: ColorHelper().randomBackgroundColor(),
         appBar: AppBar(
           title: Text("Test Application"),
           leading: Icon(Icons.timelapse),
@@ -30,14 +29,14 @@ class HomePageState extends State<HomePage> {
 
   Widget _body() {
     return Container(
-      color: _color,
       child: GestureDetector(
         behavior: HitTestBehavior.translucent,
-        onTap: () => _changeBackgroundColor(),
+        onTap: () {
+          _changeBackgroundColor();
+        },
         child: Center(
           child: Text(
             "Hey there",
-            textAlign: TextAlign.center,
             style: TextStyle(fontSize: 24, fontWeight: FontWeight.bold),
           ),
         ),

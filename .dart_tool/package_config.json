@@ -57,13 +57,13 @@
     },
     {
       "name": "flutter",
-      "rootUri": "file:///Users/javelink/flutter/packages/flutter",
+      "rootUri": "file:///Users/javelink/Developer/flutter/packages/flutter",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
     {
       "name": "flutter_test",
-      "rootUri": "file:///Users/javelink/flutter/packages/flutter_test",
+      "rootUri": "file:///Users/javelink/Developer/flutter/packages/flutter_test",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -111,7 +111,7 @@
     },
     {
       "name": "sky_engine",
-      "rootUri": "file:///Users/javelink/flutter/bin/cache/pkg/sky_engine",
+      "rootUri": "file:///Users/javelink/Developer/flutter/bin/cache/pkg/sky_engine",
       "packageUri": "lib/",
       "languageVersion": "1.11"
     },
@@ -176,7 +176,7 @@
       "languageVersion": "2.1"
     }
   ],
-  "generated": "2020-04-06T12:19:45.589462Z",
+  "generated": "2020-04-13T12:25:28.704554Z",
   "generator": "pub",
   "generatorVersion": "2.7.2"
 }
